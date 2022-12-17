@@ -3,14 +3,18 @@ public  class Transport implements Competing {
     private  String model;
     private  double fuelPercentage;
 
+    public Transport(){
 
+    }
 
     public Transport(String brand, String model, double fuelPercentage) {
         this.brand = brand;
         this.model = model;
         this.fuelPercentage = fuelPercentage;
     }
-
+    public static void  diagnostick(){
+        System.out.println("Пройти диагностику");
+    }
     public String getBrand() {
         return brand;
     }
