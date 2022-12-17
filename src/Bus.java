@@ -12,7 +12,9 @@ public class Bus extends Transport implements  Competing{
     public void setPlase(BusPlace plase) {
         this.plase = plase;
     }
-
+    public static void  diagnostick(){
+        System.out.println("Автобусу диагностика не нужна");
+    }
     public void  print(){
         System.out.println(super.toString()+" "+getPlase());
     }

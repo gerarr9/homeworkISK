@@ -6,6 +6,9 @@ public class Driver extends  Transport  {
     public Driver(String brand, String model, double fuelPercentage, String fullName, String drivingLicense, String experience) {
         super(brand, model, fuelPercentage);
         this.fullName = fullName;
+        if (drivingLicense == null || drivingLicense.isEmpty()|| drivingLicense.isBlank()){
+            throw  new UnsupportedOperationException("Не указан тип лецензии");
+        }
         this.drivingLicense = drivingLicense;
         this.experience = experience;
     }
@@ -21,6 +24,7 @@ public class Driver extends  Transport  {
     public void setFullName(String fullName) {
         this.fullName = fullName;
     }
+
 
     @Override
     public String getDrivingLicense() {

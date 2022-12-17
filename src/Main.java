@@ -12,5 +12,9 @@ public class Main {
        boolean user = Date.validate("test","1","12");
         System.out.println(user);
 
+        Transport lada = new Transport();
+        lada.diagnostick();
+        Driver oleg = new Driver("Lada","Krutanda",87,"Oleg Olegovich Oleg","","3 goda" );
+        oleg.go();
     }
     }
